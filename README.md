@@ -7,6 +7,22 @@ This application is configured for Service Discovery and Configuration with the 
 
 ## Development
 
+Start Mysql and create a microtest database:
+
+    create database microtest
+    
+Download and start Apache Zookeeper
+
+    bin/zkServer.sh start
+    
+Download and start Apache Kafka
+
+    bin/kafka-server-start.sh config/server.properties
+    
+Run [JHipster Registry war](http://www.jhipster.tech/jhipster-registry/)
+
+    ./jhipster-registry-3.1.2.war
+
 To start your application in the dev profile, simply run:
 
     ./mvnw
